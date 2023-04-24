@@ -4,9 +4,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/wiw-style.css">
   <title>Bruno's Reviews | What I watched</title>
 </head>
@@ -40,6 +43,46 @@
     <li><a href="../pages/contact.html">Contact</a></li>
   </ul>
 </nav>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong ">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          What I watched <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item " href="#m_good">The Good</a>
+          <a class="dropdown-item" href="#m_bad">The Bad</a>
+          <a class="dropdown-item" href="#m_meh">The Meh</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          What I listened to
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="../pages/wil.html#s_good">The Good</a>
+          <a class="dropdown-item" href="../pages/wil.html#s_bad">The Bad</a>
+          <a class="dropdown-item" href="../pages/wil.html#s_meh">The Meh</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/contact.html">Contact</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
 
 <div id="wiwr">
   <h1> What I Watched Recently</h1>
@@ -54,7 +97,7 @@
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/gone-girl.jpg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/gone-girl.jpg" class="card-img-top" alt="Gone Girl"></td>
         <td class = "text">
           <p class="card-text">I don’t know why I hadn’t watched this movie before. It’s a great psychological horror movie. Watch it if you like plot twists.
           </p>
@@ -80,7 +123,7 @@
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/barry.jpg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/barry.jpg" class="card-img-top" alt="Barry"></td>
         <td class = "text">
           <p class="card-text">This is probably my favorite show of all time. Bill Hader is a genius. This is the perfect blend of comedy, action, and drama. It’s currently in its fourth and final season.</p>
         </td>
@@ -105,7 +148,7 @@
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/the_menu.jpg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/the_menu.jpg" class="card-img-top" alt="The Menu"></td>
         <td class = "text">
           <p class="card-text">
             I went into this movie with no context, and that’s the best way to watch it. It kept me on the edge of my seat for the whole runtime. It is an excellent critique of different aspects of society.
@@ -135,7 +178,7 @@
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/too_hot.jpg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/too_hot.jpg" class="card-img-top" alt="Too Hot To Handle"></td>
         <td class = "text">
           <p class="card-text">I honestly don’t know how I ended up watching this but please don’t waste your time. Love Island is better.
           </p>
@@ -264,8 +307,8 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle"> Song </h6>
+    <h5 class="card-title">Elvis</h5>
+    <h6 class="card-subtitle"> Movie </h6>
 
     <div class="card-body">
       <table class = "img-review">

@@ -4,10 +4,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/wil-style.css">
   <title>Bruno's Reviews | What I Listened To</title>
 </head>
@@ -39,6 +42,46 @@
     <li><a href="../pages/contact.html">Contact</a></li>
   </ul>
 </nav>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong ">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          What I watched
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item " href="../pages/wiw.html#m_good">The Good</a>
+          <a class="dropdown-item" href="../pages/wiw.html#m_bad">The Bad</a>
+          <a class="dropdown-item" href="../pages/wiw.html#m_meh">The Meh</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          What I listened to <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#s_good">The Good</a>
+          <a class="dropdown-item" href="#s_bad">The Bad</a>
+          <a class="dropdown-item" href="#s_meh">The Meh</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/contact.html">Contact</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
 
 <div id="wilr">
   <h1> What I Listened to Recently</h1>
@@ -49,23 +92,23 @@
 <div class = "cards">
 
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle"> Song </h6>
+    <h5 class="card-title">Oscuro Extasis</h5>
+    <h6 class="card-subtitle"> Album </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="Oscuro extasis"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">This album by Argentinian rapper Wos is great, I’ve been listening to it nonstop. It’s dark but hopeful, I love its aesthetic and its lyrics.</p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/album/0fYhjxeRFdXp6s8R9hUXKt" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 4/5</p>
         </td>
       </table>
 
@@ -74,23 +117,25 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle"> Song </h6>
+    <h5 class="card-title">Everything I Know About Love</h5>
+    <h6 class="card-subtitle"> Album </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/eikal.jpg" class="card-img-top" alt="Everything I Know About Love"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">
+            This album is made for the hopeless romantics. Laufey is an incredible songwriter, you can tell she put her soul into every single one of these songs.
+          </p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/album/0Ydm84ftyiWRGOIFkdl30L" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 4.5/5</p>
         </td>
       </table>
 
@@ -99,14 +144,16 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle"> Song </h6>
+    <h5 class="card-title">CALL ME IF YOU GET LOST: The Estate Sale</h5>
+    <h6 class="card-subtitle"> Album </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/estate%20sale.jpeg" class="card-img-top" alt="CALL ME IF YOU GET LOST: The Estate Sale"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">
+            The extra songs enhance the original in a way that I didn't think was possible. I love Tyler's flow and production.
+          </p>
         </td>
       </table>
 
@@ -115,7 +162,7 @@
           <a href="#" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 4.5/5</p>
         </td>
       </table>
 
@@ -128,23 +175,25 @@
 <div class = "cards">
 
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle"> Song </h6>
+    <h5 class="card-title">OK Orchestra</h5>
+    <h6 class="card-subtitle"> Album </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/ok.jpg" class="card-img-top" alt="OK Orchestra"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">
+            My friend told me to listen to this. I couldn't make it through the first half. I blocked him.
+          </p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/album/1y2AzG31F4CuCKQ1rpIzaI" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 1.5/5</p>
         </td>
       </table>
 
@@ -153,23 +202,23 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">Mother</h5>
     <h6 class="card-subtitle"> Song </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/mother.jpg" class="card-img-top" alt="Mother"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">This song by Meghan Trainor is everything that's wrong with the music industry, it's a song made with going 'viral' in mind.</p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/track/69ZzhvHnSSnzMO8SMYEJWb?si=4a06f5730f8b4bcc" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 0.5/5</p>
         </td>
       </table>
 
@@ -178,23 +227,23 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">Justice for all</h5>
     <h6 class="card-subtitle"> Song </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/justice.jpg" class="card-img-top" alt="Justice for All"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Politics aside, the fact that this song exist is crazy. It's kinda scary. I got a headache after listening to this.</p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/album/3EsCXqPcb9QTbmmtkqqEpI?si=pNHtDIMnTZu_gjEo6I_OTQ" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 0/5</p>
         </td>
       </table>
 
@@ -208,23 +257,23 @@
 <div class = "cards">
 
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle"> Song </h6>
+    <h5 class="card-title">One Wayne G</h5>
+    <h6 class="card-subtitle"> Album </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/mac.jpg" class="card-img-top" alt="One Wayne G"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">This album has 199 songs and it's over 9 hours long. Of course I didn't listen to the whole thing. It's mostly just beats and made my run a little better so yeah.</p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/album/70hX7IYqmUGV97OXs2v848?si=ONwsituMRRanQDljLeAUzw" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 2.5/5</p>
         </td>
       </table>
 
@@ -233,23 +282,23 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">Niña Bonita</h5>
     <h6 class="card-subtitle"> Song </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/feid.jpg" class="card-img-top" alt="Niña Bonita"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">This song is okay but we're reaching the point where every reggaeton song sounds exactly the same. Also, Sean Paul's spanish doesn't help the track.  </p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/album/3bVdhbdl1XxW7u7A0TffBB?si=cSZaQDaRTA6xOP75am5Q5w" class="btn btn-primary">Listen</a>
         </td>
         <td>
-          <p class="card-rating">Rating: 3/5</p>
+          <p class="card-rating">Rating: 2/5</p>
         </td>
       </table>
 
@@ -258,20 +307,20 @@
 
   </div>
   <div class="card" >
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">Die For You (with Ariana Grande) - Remix</h5>
     <h6 class="card-subtitle"> Song </h6>
 
     <div class="card-body">
       <table class = "img-review">
-        <td><img src="../images/contando-overjas.jepg.jpeg" class="card-img-top" alt="..."></td>
+        <td><img src="../images/week.jpg" class="card-img-top" alt="Die For You (with Ariana Grande) - Remix"></td>
         <td class = "text">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">The weekend is great, Ariana is also great, but this song is really unnecessary and sounds weird. It doesn't hit the same as the original.</p>
         </td>
       </table>
 
       <table class="rating">
         <td>
-          <a href="#" class="btn btn-primary">Listen</a>
+          <a target="_blank" href="https://open.spotify.com/track/4W4fNrZYkobj539TOWsLO2?si=ee1f228fdc0b4c16" class="btn btn-primary">Listen</a>
         </td>
         <td>
           <p class="card-rating">Rating: 3/5</p>
