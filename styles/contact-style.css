@@ -156,6 +156,10 @@ form{
     min-width: 400px;
   }
 
+  .form-control {
+    font-size: 50%;
+  }
+
   h1{
     text-align: center;
     padding-top: 20px;
