@@ -54,6 +54,7 @@ body{
 
 table .card-img-top{
   width: 140px;
+  height: 200px;
 
 }
 table .text{
@@ -97,11 +98,14 @@ table .text{
 }
 
 .card{
-  max-width: 18rem;
-  max-height: 28rem;
+
+
+  width: 18rem;
+  height: 24rem;
+
   background-color: #393646;
   display: flex;
-  margin: 0 10px;
+  margin: 0 auto;
 }
 
 .card-title{
@@ -121,8 +125,73 @@ table .text{
 .cards{
   display: flex;
 }
+.navbar{
+  padding: 0;
+}
+.navbar-nav{
+  display: flex;
+  text-align: right;
+  padding: 0 10%;
+  background-color: #6D5D6E;
+  font-weight: bold;
+  position: relative;
+  z-index: initial;
+}
+
+.navbar a{
+  color: #E7D9BA;
+}
+.navbar{
+  display: none;
+}
 
 
+.navbar-toggler{
+  background-color: #6D5D6E;
+  float: right;
+}
+
+
+.dropdown-item{
+  background-color: #6D5D6E;
+  padding: 5px 10px;
+
+}
+.dropdown-item:hover{
+  background-color: #393646;
+  color: #E7D9BA;
+}
+
+@media only screen and (max-width: 648px) {
+  header img { float: none; }
+  header { text-align: center; }
+  .card { flex-direction: column; }
+  #nav_menu{
+    display: none;
+
+  }
+  .navbar{
+    display: inline;
+  }
+
+
+}
+@media only screen and (max-width: 950px) {
+
+  .cards{
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  .card{
+    margin: 15px 15px;
+    display: inline-block;
+
+  }
+
+
+}
 
 #nav_menu ul{
   display: flex;
@@ -169,11 +238,12 @@ table .text{
 
 #nav_menu ul li ul a:hover{
   color: #F4EEE0;
+  background-color: #393646;
 }
 #nav_menu ul li a:hover{
   color: #F4EEE0;
+  background-color: #393646;
 }
-
 
 
 
